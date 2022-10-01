@@ -1,89 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <title>SeaBondi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Fabricio Boccardo</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous"/>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="container">
+        <div class="left_side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src = "fotoFabri.png">
+                </div>
+                <h2> Fabricio Boccardo <br> <span>Web Developer</span></h2>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+            
+            <div class="contactInfo">
+                <h3 class="title">Contact Info </h3>
+                <ul>
                     <li>
-                      <hr class="dropdown-divider">
+                        <span class=" icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text"> +11 6906-2105</span>
+
                     </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-              </form>
+                    <li>
+                        <span class=" icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text"> fabricioboccardo@gmail.com</span>
+
+                    </li>
+                   
+                </ul>
             </div>
-          </div>
+
+            <div class="contactInfo education">
+                <h3 class="title">Education </h3>
+                <ul>
+                    <li>
+                        <h5>2019-2020</h5>
+                        <h4>Dos años estudiando Bioinformática</h4>
+                        <h4>UADE</h4>
+                    </li>
+                    <li>
+                        <h5>2021-2022</h5>
+                        <h4>Dos años estudiando programación</h4>
+                        <h4>UADE</h4>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="contactInfo languag">
+                <h3 class="title">Idiomas </h3>
+                <ul>
+                    <li>
+                        <span class="text">Español</span>
+                        <span class="percent"></span>
+                            <div style="width: 90%;"></div>
+                    </li>
+                    <li>
+                        <span class="text">Inglés</span>
+                            <div style="width: 70%;"></div>
+                        <span class="percent"></span>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </nav>
 
-    <h1>DesignTeam</h1>
-    <h2>Tu compañia de confianza</h2>
+        <div class="right_Side"></div>
+    </div>
 
-    <h3>Sobre nosotros:</h3>
-
-    <p> SeaBondi es una empresa argentina de transporte y turismo. Ésta se caracteriza por ofrecer viajes en cruceros
-        entre ciudades de Argentina, Uruguay y Brasil a un precio barato en comparación a su competencia.
-        Los puertos recorridos por nuestro servicio son:
-    </p>
-
-    <ul>
-        <li>Buenos Aires (Argentina)</li>
-        <li>Canal Beagle (Argentina)</li>
-        <li>Ushuaia (Argentina)</li>
-        <li>Estrecho de Magallanes (Argentina)</li>
-        <li> Puerto Stanley (Argentina)</li>
-        <li>Montevideo (Uruguay)</li>
-        <li> Punta del Este (Uruguay)</li>
-        <li> Santos (Brasil)</li>
-        <li> Itajaí (Brasil)</li>
-        <li> Rio de Janeiro (Brasil)</li>
-        <li> Ilhabela (Brasil)</li>
-    </ul>
-
-    <a href="asd"></a>
-
-    <h2><a href="integrantes.html">contacto</a></h2>
-
+    
 </body>
-
 </html>
