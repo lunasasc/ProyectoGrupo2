@@ -1,0 +1,102 @@
+
+
+article{
+    height: 20%;
+    background-image: url('../img/fondo.jpg');
+
+}
+#header-imagen{
+    display: flex;
+    justify-content: center;
+   
+}
+
+#menu{
+    display: none;
+}
+
+#hamburgesa{
+    display: none;
+}
+
+#ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    padding: 0;
+}
+
+#li{
+    display: block;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+    width: 200px;
+}
+#li:hover{
+    filter: brightness(110%);
+}
+
+@media all and  (max-height: 1200px){
+    #menu:checked ~ #ul{
+        display: block;
+    }
+    #menu:checked ~ #hamburgesa{
+        background-color: aliceblue;
+    }
+    #hamburgesa:hover{
+        background: grey;
+    }
+    #li{
+        margin: 1px;
+    }
+    #hamburgesa{
+        box-sizing: border-box;
+        display: block;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        background-color: cadetblue;
+    }
+    #ul{
+        display: none;
+        background-color: white;
+    }
+}
+
+@media all and (max-width : 700px){
+    #menu:checked ~ #ul{
+        display: block;
+    }
+    #menu:checked ~ #hamburgesa{
+        background-color: aliceblue;
+    }
+    #hamburgesa:hover{
+        background: grey;
+    }
+    #li{
+        margin: 1px;
+    }
+    #hamburgesa{
+        box-sizing: border-box;
+        display: block;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        background-color: cadetblue;
+    }
+    #ul{
+        display: none;
+        background-color: white;
+    }
+}
