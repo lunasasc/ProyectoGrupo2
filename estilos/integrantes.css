@@ -1,0 +1,190 @@
+html{height: 100%;}
+* {margin: 0;
+        box-sizing: border-box;
+}
+
+
+body{
+    
+    position: relative ;
+        min-height: 100vh;
+    
+    background-image: url("../img/laptop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    position: relative;
+
+}
+
+span{position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+  
+    z-index: 1;
+}
+
+main{
+    padding: 5%;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    
+}
+
+
+
+.asociado1{
+    
+    padding: 12px;
+    display: flex;
+    position: relative;
+    
+    height: 300px;
+    width: 300px;
+    background-color: #C5BFBF;
+    border-radius: 20%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.fotofabri{
+    display: flex;
+    padding: 0;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/fotoFabri.jpeg");
+    background-size:cover;
+
+}
+
+.asociado2{
+    
+    padding: 12px;
+    display:flex ;
+    position: relative;
+    
+    height: 300px;
+    width: 300px;
+    background-color: #C5BFBF;
+    border-radius: 20%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.fotoSofi{
+    display: flex;
+    padding: 0;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/sofideuade.jpeg");
+    background-size:cover;
+
+}
+
+.asociado3{
+    
+    padding: 12px;
+    display:flex ;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: #C5BFBF;
+    border-radius: 20%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    
+}
+
+.fotoLucas{
+    display: flex;
+    padding: 0;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/Lucas.jpeg");
+    background-size:cover;
+    border-radius: 5%;
+
+}
+
+.asociado4{
+    
+    padding: 12px;
+    display:flex ;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: #C5BFBF;
+    border-radius: 20%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    
+}
+
+.fotoLucasThomas{
+    display: flex;
+    padding: 0;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/Thomas.jpeg");
+    background-size:cover;
+}
+
+@media (max-width:685px){
+    html{height: 100%;}
+    * {margin: 0;
+            box-sizing: border-box;
+    }
+    
+    
+    body{
+        
+        position: relative ;
+            min-height: 100vh;
+        
+        background-image: url("../img/laptop.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    
+
+}
+@media (max-width:1700px){
+    html{height: 100%;}
+    * {margin: 0;
+            box-sizing: border-box;
+    }
+    
+    
+    body{
+        
+        position: relative ;
+            min-height: 100vh;
+        
+        background-image: url("../img/laptop.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    
+
+}
