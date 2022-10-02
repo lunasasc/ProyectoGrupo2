@@ -64,7 +64,7 @@ main{
     position: relative;
     width: 200px;
     height: 200px;
-    background-image: url("../img/fotoFabri.jpeg");
+    background-image: url("../img/fotoFabri.png");
     background-size:cover;
 
 }
