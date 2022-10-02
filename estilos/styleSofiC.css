@@ -1,0 +1,62 @@
+html{height: 100%;}
+*{margin: 0;
+        box-sizing:border-box;
+        padding: 0;
+        box-sizing: border-box;
+        list-style:none;
+        font-family: 'Poppins', sans-serif;
+        background: rgb(238, 140, 157);
+
+}
+
+
+body{
+    background:pink ;
+    position: relative;
+    min-height: 100vh;
+    background: pink;
+    min-height: 100vh;}
+    
+    
+.container .left_side
+    {
+       position:  relative;
+       background:rgb(238, 140, 157);
+       padding: 40px;
+    
+    }
+
+.profileText
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        border-bottom: 1px white; }
+
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background:pink;
+    margin: 50px;
+    display: grid;
+    box-shadow: 0 35px 55px white;
+    
+
+}
+
+
+header{
+    position: relative;
+
+}
+
+main{
+    position: relative;
+    width: px;
+    height: 100px;
+
+}
