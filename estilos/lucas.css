@@ -11,36 +11,252 @@ body{background-color: #B7CADB;
 
 
 footer{
-background-color:#B7CADB ;
-height: 1000px;
-width: 1000;
+    position: absolute;
+    background-color: #495464;
+    bottom: 0;
+    top: 100%;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: xx-large;
+    margin-top:5px
 }
 
 
 header{
-position: relative;
-background-color: #495464;
-padding: 1%;
-text-align: left;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 22px;
+    position: absolute;
+    background-color: #495464;
+    top: 0;
+    width: 100%;
+    height: 50px;
 }
 
 
 article{
-    position: absolute;
-    left:325px;
+    position: relative;
+    display: inline-flex;
     padding:20px;
-    background-color: #B7CADB;
-    text-align: left ;
-    height: 1130px;
-    width: 1139px;
+    text-align:left ;
+    flex-direction: column;
+    width: 73% ;
+    background-color:rgba(192, 192, 192,0.35);
+    top:40px ;
+    
+}
+
+li{
+    margin:5px
 }
 
 
 aside{
-    float: left;
-    height:30cm;
-    width: 7,5cm;
+    position: relative;
+    display: inline-flex;
+    width: 25%;
+    height: 500px;
     background-color:#BBBFCA;
+    top: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
+.pic{
+    
+    position: relative;
+    display: flex;
+    background-image: url(../img/Lucas.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 320px;
+    
+
+
+}
+
+
+@media (max-width: 1500px){
+    aside{
+        position: relative;
+        display: flex;
+        width: 370px;
+        height: 400px;
+        background-color:#BBBFCA;
+        top: 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+
+
+}
+
+#menu{
+    display: none;
+    
+}
+
+#hamburgesa{
+    display: none;
+}
+#ul{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 0;
+    padding: 0;
+    height: 5%;
+    width: 12%;
+    left:0px;
+    top:10px ;
+}
+#li{
+    display: block;
+    position: relative;
+    background-color: #CECECE;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid #CECECE;
+    width: 100%;
+    
+}
+#li:hover{
+    filter: brightness(110%);
+}
+
+#menu:checked ~ #ul{
+    display: block;
+}
+#menu:checked ~ #hamburgesa{
+    background-color: #CECECE;
+}
+#hamburgesa:hover{
+    background: #CECECE;
+}
+#li{
+    margin: 1px;
+}
+#hamburgesa{
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: #CECECE;
+    left:10px;
+    top:10px ;
+
+    
+}
+#ul{
+    display: none;
+    background-color: #CECECE;
+    
+}
+
+
+
+#navbar{
+    width: 1200px;
+    
+
+
+}
+
+
+@media (max-width:1300px){
+    #menu{
+        display: none;
+        
+    }
+    
+    #hamburgesa{
+        display: none;
+    }
+    #ul{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin-top: 0;
+        padding: 0;
+        height: 5%;
+        width: 100px;
+        left:0px;
+        bottom:32px ;
+    }
+    #li{
+        display: block;
+        position: relative;
+        background-color: #CECECE;
+        margin: 10px;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid #CECECE;
+        width: 100px;
+        
+    }
+    #li:hover{
+        filter: brightness(110%);
+    }
+    
+    #menu:checked ~ #ul{
+        display: block;
+    }
+    #menu:checked ~ #hamburgesa{
+        background-color: #CECECE;
+    }
+    #hamburgesa:hover{
+        background: #CECECE;
+    }
+    #li{
+        margin: 1px;
+    }
+    #hamburgesa{
+        position: relative;
+        box-sizing: border-box;
+        display: block;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        background-color: #CECECE;
+        left:0px;
+        bottom:32px ;
+    
+        
+    }
+    #ul{
+        display: none;
+        background-color: #CECECE;
+        
+    }
+    
+}
+
+@media (max-height:500px) {
+    article{
+        position: relative;
+        display: inline-flex;
+        padding:20px;
+        text-align:left ;
+        flex-direction: row;
+        width: 73% ;
+        background-color:rgba(192, 192, 192,0.35);
+        top:40px ;
+    
+        
+    }
+    
+}
+   
