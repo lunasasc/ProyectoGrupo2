@@ -5,7 +5,7 @@
 #section{
     display: flex;
 }
-#footer{
+#article{
     display: flex;
     background: aquamarine;
     font-size: xx-large;
@@ -173,4 +173,11 @@ header{
     text-align: center;
     font-family: revert;
     text-decoration: underline;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    border-style: double;
 }

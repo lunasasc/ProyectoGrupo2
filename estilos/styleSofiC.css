@@ -10,6 +10,135 @@ html{height: 100%;}
 }
 
 
+#menu{
+    display: none;
+}
+
+#hamburgesa{
+    display: none;
+}
+
+#ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    padding: 0;
+    width: 10%;
+}
+
+#li{
+    display: block;
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid cadetblue;
+    width: 10%;
+}
+#li:hover{
+    filter: brightness(110%);
+}
+
+@media all and  (max-height: 1200px){
+    #menu:checked ~ #ul{
+        display: block;
+    }
+    #menu:checked ~ #hamburgesa{
+        background-color: cadetblue;
+    }
+    #hamburgesa:hover{
+        background: cadetblue;
+    }
+    #li{
+        margin: 1px;
+    }
+    #hamburgesa{
+        box-sizing: border-box;
+        display: block;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        background-color: cadetblue;
+    }
+    #ul{
+        display: none;
+        background-color: cadetblue;
+    }
+}
+
+
+
+
+
+
+@media all and (max-width : 850px){
+    #menu:checked ~ #ul{
+        display: block;
+    }
+    #menu:checked ~ #hamburgesa{
+        background-color: cadetblue;
+    }
+    #hamburgesa:hover{
+        background: cadetblue;
+    }
+    #li{
+        margin: 1px;
+        width: 90px;
+    }
+    #hamburgesa{
+        box-sizing: border-box;
+        display: block;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        background-color: cadetblue;
+    }
+    #ul{
+        display: none;
+        background-color: cadetblue;
+        width: 111px;
+    }
+}
+
+@media all and (max-width : 700px){
+    #menu:checked ~ #ul{
+        display: block;
+    }
+    #menu:checked ~ #hamburgesa{
+        background-color: cadetblue;
+    }
+    #hamburgesa:hover{
+        background: cadetblue;
+    }
+    #li{
+        margin: 1px;
+    }
+    #hamburgesa{
+        box-sizing: border-box;
+        display: block;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        background-color: cadetblue;
+    }
+    #ul{
+        display: none;
+        background-color: cadetblue;
+    }
+}
+
 body{
     background:pink ;
     position: relative;
