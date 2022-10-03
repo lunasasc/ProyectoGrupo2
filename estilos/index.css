@@ -29,6 +29,10 @@
 }
 header{
     background-color: cadetblue;
+    background-image: url("../img/heloo.jpg");
+    background-size: 1920px 200px;
+    background-repeat: no-repeat;
+    height: 200px;
 }
 #header-imagen{
     display: flex;
@@ -49,6 +53,7 @@ header{
     justify-content: space-between;
     margin-top: 0;
     padding: 0;
+    width: 10%;
 }
 
 #li{
@@ -58,7 +63,7 @@ header{
     padding: 10px;
     list-style: none;
     border-bottom: 1px solid cadetblue;
-    width: 200px;
+    width: 10%;
 }
 #li:hover{
     filter: brightness(110%);
@@ -95,12 +100,50 @@ header{
     }
 }
 
+
+
+
+
+
+@media all and (max-width : 850px){
+    #menu:checked ~ #ul{
+        display: block;
+    }
+    #menu:checked ~ #hamburgesa{
+        background-color: cadetblue;
+    }
+    #hamburgesa:hover{
+        background: cadetblue;
+    }
+    #li{
+        margin: 1px;
+        width: 90px;
+    }
+    #hamburgesa{
+        box-sizing: border-box;
+        display: block;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        background-color: cadetblue;
+    }
+    #ul{
+        display: none;
+        background-color: cadetblue;
+        width: 111px;
+    }
+}
+
 @media all and (max-width : 700px){
     #menu:checked ~ #ul{
         display: block;
     }
     #menu:checked ~ #hamburgesa{
-        background-color: aliceblue;
+        background-color: cadetblue;
     }
     #hamburgesa:hover{
         background: cadetblue;
